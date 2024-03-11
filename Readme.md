@@ -3,7 +3,7 @@
 The official PyTorch implementation of our **CVPR** 2024 paper:
 
 **DYSON: Dynamic Feature Space Self-Organization for Online Task-Free Class Incremental Learning**
-GitHub maintainer: [Yingjie Chen](https://github.com/isCDX2/DYSON)
+GitHub maintainer: [Yingjie Chen](https://github.com/isCDX2)
 ## Highlight
 - --
 ### Brief Introduction
