@@ -14,18 +14,21 @@ In this paper, we focus on a challenging Online Task-Free Class Incremental Lear
 ### Strong Performance
 Our proposed DYSON steadily and dramatically outperforms the state-of-the-art methods.
 
-|   Method      | backbone | buffer | cifar10,step=1 | cifar10,step=2 | cifar10,step=Gaussian | cifar100,step=1 | cifar100,step=5 | cifar100,step=Gaussian |
-|:-------------:|:--------:|:------:|:--------------:|:--------------:|:---------------------:|:---------------:|:---------------:|:----------------------:|
-|   CoPE        | ResNet50 | 1k     | -              | 48.9           | -                     | -               | 21.6            | -                      |
-|   CN-DPM      | ResNet50 | 1k     | -              | 45.2           | -                     | -               | 20.1            | -                      |
-|   GMED        | ResNet50 | 5k     | -              | 47.7           | -                     | -               | 19.6            | -                      |
-|   FCA         | ResNet50 | 0      | 77.5           | 78.7           | 76.1                  | 53.3            | 48.7            | 53.4                   |
-|   Ensemble    | ResNet50 | 1k     | 78.3           | 79.0           | 50.1                  | 54.1            | 55.3            | 39.0                   |
-|   DSDM        | ResNet50 | 1k     | 79.4           | 79.6           | 78.7                  | 54.9            | 55.3            | 55.5                   |
-|**DYSON(ours)**| ResNet50 | 0      | **79.5**       | **80.7**       | **79.1**              | **58.9**        | **59.2**        | **58.6**               |
-|  L2P          | ViT-S/8  | 1k     | 46.8           | 61.4           | 57.5                  | 8.4             | 27.3            | 48.7                   |
-|  DSDM         | ViT-S/8  | 1k     | 85.5           | 85.6           | 84.9                  | 61.1            | 60.8            | 64.1                   |
-|**DYSON(ours)**| ViT-S/8  | 0      | **92.6**       | **93.5**       | **93.8**              | **77.7**        | **75.6**        | **76.4**               |
+|   Method      | backbone | buffer | cifar10,step=1 | cifar10,step=2 | cifar10,step=Gaussian | buffer | cifar100,step=1 | cifar100,step=5 | cifar100,step=Gaussian |
+|:-------------:|:--------:|:------:|:--------------:|:--------------:|:---------------------:|:------:|:---------------:|:---------------:|:----------------------:|
+|   ODDL        | ResNet18 | 2k     | -              | 52.7           | -                     | 2k     | -               | 27.2            | -                      |
+|   SDP         | ResNet18 | 500    | -              | 66.2           | 76.3                  | 2k     | -               | -               | -                      |
+|  DYSON(ours)  | ResNet18 | 0      | **73.4**       | **74.4**       | **76.5**              | 0      | **49.6**        | **45.3**        | **47.0**               |
+|   CoPE        | ResNet50 | 1k     | -              | 48.9           | -                     | 5k     | -               | 21.6            | -                      |
+|   CN-DPM      | ResNet50 | 1k     | -              | 45.2           | -                     | 1k     | -               | 20.1            | -                      |
+|   GMED        | ResNet50 | 5k     | -              | 47.7           | -                     | 5k     | -               | 19.6            | -                      |
+|   FCA         | ResNet50 | 0      | 77.5           | 78.7           | 76.1                  | 0      | 53.3            | 48.7            | 53.4                   |
+|   Ensemble    | ResNet50 | 2k     | 78.3           | 79.0           | 50.1                  | 6k     | 54.1            | 55.3            | 39.0                   |
+|   DSDM        | ResNet50 | 2k     | 79.4           | 79.6           | 78.7                  | 6k     | 54.9            | 55.3            | 55.5                   |
+|**DYSON(ours)**| ResNet50 | 0      | **79.5**       | **80.7**       | **79.1**              | 0      | **58.9**        | **59.2**        | **58.6**               |
+|  L2P          | ViT-S/8  | 1k     | 46.8           | 61.4           | 57.5                  | 3k     | 8.4             | 27.3            | 48.7                   |
+|  DSDM         | ViT-S/8  | 1k     | 85.5           | 85.6           | 84.9                  | 3k     | 61.1            | 60.8            | 64.1                   |
+|**DYSON(ours)**| ViT-S/8  | 0      | **92.6**       | **93.5**       | **93.8**              | 0      | **77.7**        | **75.6**        | **76.4**               |
 
 
 
