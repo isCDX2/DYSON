@@ -60,7 +60,7 @@ If any parts of our paper and code help your research, please consider citing us
 
 ```
 @InProceedings{He_2024_CVPR,
-    author    = {He, Yuhang and Chen, YingJie and Jin, Yuhan and Dong, Songlin and Gong, Yihong},
+    author    = {He, Yuhang and Chen, YingJie and Jin, Yuhan and Dong, Songlin and Wei, Xing and Gong, Yihong},
     title     = {DYSON: Dynamic Feature Space Self-Organization for Online Task-Free Class Incremental Learning},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     month     = {June},
